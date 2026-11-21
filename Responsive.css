@@ -144,13 +144,33 @@
 
 /* ===================destination-container================ */
 
-@media (max-width: 1280px){
-     .destination-container {
-        width: 90%;
-        padding: 20px;
-        box-sizing: border-box;
-        /* margin-left: -0.1vw; */
+@media (width: 1280px) {
+
+    .destination-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        width: 95%;
+        margin: 0 auto;
     }
+
+    .destination-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .destination-card img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
 }
 @media (max-width: 1032px) {
     .destination-container {
